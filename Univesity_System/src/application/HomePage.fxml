@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Kontroll1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="504.0" layoutX="-4.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="699.0">
+         <fill>
+            <LinearGradient endX="0.5719696897448916" endY="0.01893939393939394">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.09590643644332886" green="0.3458869457244873" blue="0.6315789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.09590643644332886" green="0.3458869457244873" blue="0.6315789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="131.0" fitWidth="144.0" layoutX="74.0" layoutY="117.0">
+         <image>
+            <Image url="@../../../../Screenshot%202025-04-16%20102438.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="218.0" layoutY="33.0" text="UNIVESITY HOME PAGE">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="professorbtn" layoutX="92.0" layoutY="291.0" mnemonicParsing="false" text="Professor">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="studentbtn" layoutX="471.0" layoutY="291.0" mnemonicParsing="false" text="Student">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <Button fx:id="logohu" layoutX="299.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="111.0" text="Log In">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.61" specularConstant="0.23" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow>
+                     <color>
+                        <Color red="0.07000000029802322" green="0.07000000029802322" blue="0.07000000029802322" opacity="0.9969605207443237" />
+                     </color>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.07680000364780426" green="0.7145422101020813" blue="0.9599999785423279" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="160.0" fitWidth="192.0" layoutX="438.0" layoutY="103.0">
+         <image>
+            <Image url="@../../../../Screenshot%202025-04-16%20102359.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
